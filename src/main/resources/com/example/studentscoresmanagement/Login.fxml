@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentscoresmanagement.Login">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="278.0" />
+      <ImageView fitHeight="215.0" fitWidth="278.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logoAnticode.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="278.0" prefHeight="400.0" prefWidth="322.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="406.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="330.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Text layoutX="70.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back,">
+               <font>
+                  <Font name="Impact" size="29.0" />
+               </font>
+            </Text>
+            <Text fill="#a3a3a3" layoutX="103.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in to continue">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Text>
+            <Pane layoutX="47.0" layoutY="110.0" prefHeight="206.0" prefWidth="227.0">
+               <children>
+                  <Button fx:id="buttonLI" layoutX="70.0" layoutY="149.0" mnemonicParsing="false" onAction="#onLI" prefHeight="28.0" prefWidth="87.0" style="-fx-background-color: black;" text="Log In" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <PasswordField fx:id="inPW" layoutY="88.0" prefHeight="30.0" prefWidth="227.0" promptText="Password">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></PasswordField>
+                  <TextField fx:id="inUN" layoutY="46.0" prefHeight="28.0" prefWidth="227.0" promptText="Username">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></TextField>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
